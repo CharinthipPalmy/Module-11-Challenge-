@@ -1,6 +1,6 @@
 # Module 11 Challenge: Forecasting Net Prophet
 
-![images](pics/Image/unit-11-readme-photo.png)
+![Alt text](https://git.bootcampcontent.com/Monash-University/MONU-VIRT-FIN-PT-06-2023-U-LOLC/-/raw/main/11-Time-Series/Homework/Instructions/Images/unit-11-readme-photo.png)
 
 ## Background
 
