@@ -1,6 +1,6 @@
 # Module 11 Challenge: Forecasting Net Prophet
 
-![images](Images/unit-11-readme-photo.png)
+![images](pics/Image/unit-11-readme-photo.png)
 
 ## Background
 
@@ -29,7 +29,7 @@ Answering the question requires you to complete the following steps:
 
 1. Read the search data into a DataFrame, and then slice the data to just the month of May 2020. (During this month, Mercado Libre released its quarterly financial results.) Use hvPlot to visualize the results. Do any unusual patterns exist?
 
-![images](Image 1.jpg)
+![images](pics/Image 1.jpg)
 
 2. Calculate the total search traffic for the month, and then compare the value to the monthly median across all months. Did the Google search traffic increase during the month that Mercado Libre released its financial results?
 
@@ -48,11 +48,11 @@ To help Marketing, you'll want to mine the search traffic data for predictable s
 
 1. Group the hourly search data to plot the average traffic by the day of the week (for example, Monday vs. Friday).
 
-![images](Image 2.jpg)
+![images](pics/Image 2.jpg)
 
 2. Using hvPlot, visualize this traffic as a heatmap, referencing `index.hour` for the x-axis and `index.dayofweek` for the y-axis. Does any day-of-week effect that you observe concentrate in just a few hours of that day?
 
-![images](Image 3.jpg)
+![images](pics/Image 3.jpg)
 
 **Question:** Does any day-of-week effect that you observe concentrate in just a few hours of that day?
 
@@ -64,7 +64,7 @@ To help Marketing, you'll want to mine the search traffic data for predictable s
 
 **Answer:** The search traffic increased from the week 42 and it was peak at weeks 51 before it plummeted in weeks 52. Consequently, the search traffic was not an increase trend throughout the winter holiday period (weeks 40 through 52).
 
-![images](Image 4.jpg)
+![images](pics/Image 4.jpg)
 
 ### Step 3: Relate the Search Traffic to Stock Price Patterns
 
@@ -74,11 +74,11 @@ You can find out the answer by completing the following steps:
 
 1. Read in and plot the stock price data. Concatenate the stock price data to the search data in a single DataFrame.
 
-![images](Image 5-1.jpg)
+![images](pics/Image 5-1.jpg)
 
 2. Note that market events emerged during 2020 that many companies found difficult. But after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms. So, slice the data to just the first half of 2020 (`2020-01` to `2020-06` in the DataFrame), and then use hvPlot to plot the data. Do both time series indicate a common trend that’s consistent with this narrative?
 
-![images](Image 6.jpg)
+![images](pics/Image 6.jpg)
 
 **Question:** Do both time series indicate a common trend that’s consistent with this narrative?
 
@@ -87,13 +87,13 @@ You can find out the answer by completing the following steps:
 3. Create a new column in the DataFrame named “Lagged Search Trends” that offsets, or shifts, the search traffic by one hour. Create two additional columns:
 
    - “Stock Volatility”, which holds an exponentially weighted four-hour rolling average of the company’s stock volatility
-![images](Image 7-1.jpg)
+![images](pics/Image 7-1.jpg)
 
    - “Hourly Stock Return”, which holds the percentage of change in the company stock price on an hourly basis
-![images](Image 8.jpg)
+![images](pics/Image 8.jpg)
 
 4. Review the time series correlation, and then answer the following question: Does a predictable relationship exist between the lagged search traffic and the stock volatility or between the lagged search traffic and the stock price returns?
-![images](Image 9.jpg)
+![images](pics/Image 9.jpg)
 
 **Question:** Does a predictable relationship exist between the lagged search traffic and the stock volatility or between the lagged search traffic and the stock price returns?
 
@@ -108,7 +108,7 @@ Now, you need to produce a time series model that analyzes and forecasts pattern
 1. Set up the Google search data for a Prophet forecasting model.
 
 2. After estimating the model, plot the forecast. What is the near-term forecast for the popularity of Mercado Libre?
-![images](Image 10.jpg)
+![images](pics/Image 10.jpg)
 
 **Question:**  How's the near-term forecast for the popularity of MercadoLibre?
 
@@ -128,9 +128,9 @@ Now, you need to produce a time series model that analyzes and forecasts pattern
 
 **Answer:** The lowest point for search traffic in the calendar year is around the mid of October month.
 
-![images](Image 11-1.jpg)
-![images](Image 12-1.jpg)
-![images](Image 12-2.jpg)
+![images](pics/Image 11-1.jpg)
+![images](pics/Image 12-1.jpg)
+![images](pics/Image 12-2.jpg)
 
 ### Step 5 (Optional): Forecast the Revenue by Using Time Series Models
 
@@ -141,10 +141,10 @@ Specifically, the finance group wants a forecast of the total sales for the next
 To create the forecast, complete the following steps:
 
 1. Read in the daily historical sales (that is, revenue) figures, and then apply a Prophet model to the data.
-![images](Image 14.jpg)
+![images](pics/Image 14.jpg)
 
 2. Interpret the model output to identify any seasonal patterns in the company revenue. For example, what are the peak revenue days? (Mondays? Fridays? Something else?)
-![images](Image 15.jpg)
+![images](pics/Image 15.jpg)
 ##### Answer the following question: The company's revenues are predicted to be growth.
 
 **Question:** For example, what are the peak revenue days? (Mondays? Fridays? Something else?)
@@ -152,8 +152,8 @@ To create the forecast, complete the following steps:
 **Answer:** Wednesday.
 
 3. Produce a sales forecast for the finance group. Give them a number for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans.
-![images](Image 16.jpg)
-![images](Image 17.jpg)
+![images](pics/Image 16.jpg)
+![images](pics/Image 17.jpg)
 
 
 ### Based on the forecast information generated above, produce a sales forecast for the finance division, giving them a number for expected total sales next quarter. Include best and worst case scenarios, to better help the finance team plan.
